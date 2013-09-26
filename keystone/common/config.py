@@ -358,6 +358,15 @@ def configure():
     register_bool('domain_enabled_emulation', group='ldap', default=False)
     register_str('domain_enabled_emulation_dn', group='ldap', default=None)
 
+    # ldapauth
+    register_str('server1_host', group='ldapauth', default=None)
+    register_str('server2_host', group='ldapauth', default=None)
+    register_str('server3_host', group='ldapauth', default=None)
+    register_str('server1_domain', group='ldapauth', default=None)
+    register_str('server2_domain', group='ldapauth', default=None)
+    register_str('server3_domain', group='ldapauth', default=None)
+    register_bool('fallback', group='ldapauth', default=False)
+
     # pam
     register_str('url', group='pam', default=None)
     register_str('userid', group='pam', default=None)
